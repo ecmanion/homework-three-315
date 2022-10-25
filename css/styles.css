@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+}
+
+.about-entire {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-entire .about-smaller {
+  height: auto;
+  margin-top: 10%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-entire .about-smaller .about-title {
+  font-size: 40px;
+}
+.about-entire .about-smaller .about-image {
+  margin-top: 2%;
+  margin-top: 2%;
+  height: 450px;
+  width: auto;
+}
+.about-entire .about-smaller .about-image img {
+  height: auto;
+  width: 100%;
+}
+.about-entire .about-smaller .about-information {
+  display: flex;
+  height: 150px;
+  background-color: antiquewhite;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-entire {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about-entire .about-smaller {
+    height: auto;
+    margin-top: 10%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-entire .about-smaller .about-title {
+    font-size: 30px;
+  }
+  .about-entire .about-smaller .about-image {
+    margin-top: 2%;
+    height: 450px;
+    width: auto;
+  }
+  .about-entire .about-smaller .about-image img {
+    height: auto;
+    width: 100%;
+  }
+  .about-entire .about-smaller .about-information {
+    display: flex;
+    height: 200px;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 17px;
+  }
+}
+.contact-entire {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-entire .contact-smaller {
+  height: auto;
+  margin-top: 10%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-entire .contact-smaller h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+.contact-entire .contact-smaller .form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.contact-entire .contact-smaller .form .basic {
+  height: 70px;
+}
+
+.navholder {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.navholder .logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
+.navholder .logo-home {
+  display: none;
+}
+.navholder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.navholder .bars {
+  display: none;
+}
+.navholder .bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navholder .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.navholder .bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.navholder .links {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  background-color: wheat;
+  transition: height 0.3s, opacity 0.3s ease-in;
+}
+.navholder .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.navholder .links.active {
+  height: 10vh;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .navholder {
+    position: fixed;
+    width: 100%;
+  }
+  .navholder .logo {
+    height: 50px;
+    width: 50px;
+    display: none;
+  }
+  .navholder .logo-home {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    float: left;
+    margin: 1%;
+  }
+  .navholder .bars .bar {
+    display: block;
+    width: 25px;
+    margin: 5px 0;
+    background-color: black;
+    height: 3px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .navholder .bars {
+    display: block;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  .navholder .bars.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navholder .bars.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navholder .bars.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navholder .links {
+    height: 0;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .navholder .links.active {
+    height: 100vh;
+    opacity: 1;
+  }
+  .navholder a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+}
+.browse-page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.browse-page .browse-area {
+  height: auto;
+  width: 90%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.browse-page .individual-outside {
+  height: 350px;
+  width: 50%;
+  margin-bottom: 7%;
+}
+.browse-page .individual-outside .browse-individual {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
+  height: 250px;
+  align-items: center;
+  width: 90%;
+  background-color: antiquewhite;
+}
+.browse-page .individual-outside .browse-individual .browse-image-one {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking1.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-two {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking2.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-three {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking3.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-four {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking4.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-five {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking5.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-six {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking6.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-seven {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking7.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-eight {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking8.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-nine {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking9.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-ten {
+  height: 200px;
+  width: 200px;
+  margin: 1%;
+  background-size: cover;
+  background-image: url(../images/baking10.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-page .individual-outside .browse-individual .browse-image-one .button, .browse-page .individual-outside .browse-individual .browse-image-two .button, .browse-page .individual-outside .browse-individual .browse-image-three .button, .browse-page .individual-outside .browse-individual .browse-image-four .button, .browse-page .individual-outside .browse-individual .browse-image-five .button, .browse-page .individual-outside .browse-individual .browse-image-six .button, .browse-page .individual-outside .browse-individual .browse-image-seven .button, .browse-page .individual-outside .browse-individual .browse-image-eight .button, .browse-page .individual-outside .browse-individual .browse-image-nine .button, .browse-page .individual-outside .browse-individual .browse-image-ten .button {
+  background-color: rgb(116, 54, 54);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.browse-page .individual-outside .browse-individual .browse-image-one:hover .button, .browse-page .individual-outside .browse-individual .browse-image-two:hover .button, .browse-page .individual-outside .browse-individual .browse-image-three:hover .button, .browse-page .individual-outside .browse-individual .browse-image-four:hover .button, .browse-page .individual-outside .browse-individual .browse-image-five:hover .button, .browse-page .individual-outside .browse-individual .browse-image-six:hover .button, .browse-page .individual-outside .browse-individual .browse-image-seven:hover .button, .browse-page .individual-outside .browse-individual .browse-image-eight:hover .button, .browse-page .individual-outside .browse-individual .browse-image-nine:hover .button, .browse-page .individual-outside .browse-individual .browse-image-ten:hover .button {
+  display: flex;
+}
+.browse-page .individual-outside .browse-individual .browse-caption {
+  height: 200px;
+  width: 150px;
+}
+.browse-page .button-holder {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.browse-page .button-holder .bottom {
+  background-color: rgb(116, 54, 54);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.browse-page .browse-image-one:hover .button-bottom, .browse-page .browse-image-two:hover .view-button, .browse-page .browse-image-three:hover .view-button, .browse-page .browse-image-four:hover .view-button, .browse-page .browse-image-five:hover .view-button, .browse-page .browse-image-six:hover .view-button, .browse-page .browse-image-seven:hover .view-button, .browse-page .browse-image-eight:hover .view-button, .browse-page .browse-image-nine:hover .view-button, .browse-page .browse-image-ten:hover .view-button {
+  display: flex;
+}
+.browse-page .button-holder .button-bottom {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .browse-page {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .browse-page .browse-area {
+    height: auto;
+    width: 90%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .browse-page .individual-outside {
+    width: 100%;
+    margin-bottom: 9%;
+  }
+  .browse-page .individual-outside .browse-individual {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+    width: 90%;
+    height: 250px;
+  }
+  .browse-page .individual-outside .browse-individual .browse-image-one .button, .browse-page .individual-outside .browse-individual .browse-image-two .button, .browse-page .individual-outside .browse-individual .browse-image-three .button, .browse-page .individual-outside .browse-individual .browse-image-four .button, .browse-page .individual-outside .browse-individual .browse-image-five .button, .browse-page .individual-outside .browse-individual .browse-image-six .button, .browse-page .individual-outside .browse-individual .browse-image-seven .button, .browse-page .individual-outside .browse-individual .browse-image-eight .button, .browse-page .individual-outside .browse-individual .browse-image-nine .button, .browse-page .individual-outside .browse-individual .browse-image-ten .button {
+    display: flex;
+  }
+  .browse-page .individual-outside .browse-individual .browse-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 150px;
+  }
+}
+.home {
+  width: 100%;
+  height: 1000px;
+  z-index: 0;
+  left: 0;
+}
+.home .home-background {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  background-color: rgba(22, 21, 21, 0.5);
+}
+.home .home-background img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  z-index: 999;
+}
+.home .home-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  top: 50%;
+  background-color: rgba(22, 21, 21, 0.5);
+}
+.home .home-title h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+}
+.home .home-title .home-paragraph {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home .home-title .home-paragraph p {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .home {
+    width: 100%;
+    height: 1000px;
+    z-index: 0;
+    left: 0;
+  }
+  .home .home-background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+  }
+  .home .home-background img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    z-index: 999;
+  }
+  .home .home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    top: 50%;
+  }
+  .home .home-title h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+  }
+  .home .home-title .home-paragraph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home .home-title .home-paragraph p {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: white;
+  }
+}

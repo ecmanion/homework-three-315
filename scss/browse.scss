@@ -1,0 +1,216 @@
+.browse-page{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .browse-area{
+        height: auto;
+        width: 90%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .individual-outside{
+        height: 350px;
+        width: 50%;
+        margin-bottom: 7%;
+   
+    .browse-individual{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5%;
+        height: 250px;
+        align-items: center;
+        width: 90%;
+        background-color: antiquewhite;
+       
+       
+        .browse-image-one{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking1.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .browse-image-two{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking2.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-three{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking3.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-four{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking4.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-five{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking5.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-six{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking6.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-seven{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking7.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-eight{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking8.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-nine{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking9.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-ten{
+            height: 200px;
+            width: 200px;
+            margin: 1%;
+            background-size: cover;
+            background-image: url(../images/baking10.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .browse-image-one,.browse-image-two,.browse-image-three,.browse-image-four,.browse-image-five,.browse-image-six,.browse-image-seven,.browse-image-eight,.browse-image-nine,.browse-image-ten{
+            .button{
+                background-color: rgb(116, 54, 54);
+                border-radius: 30px;
+                cursor: pointer;
+                width: 128px;
+                height: 42px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                color: white;
+             }
+        }
+        .browse-image-one:hover .button,.browse-image-two:hover .button,.browse-image-three:hover .button,.browse-image-four:hover .button,.browse-image-five:hover .button,.browse-image-six:hover .button,.browse-image-seven:hover .button,.browse-image-eight:hover .button,.browse-image-nine:hover .button,.browse-image-ten:hover .button{
+            display: flex;
+        }
+
+    .browse-caption{
+        height: 200px;
+        width: 150px;
+}
+}
+}
+    .button-holder{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        .bottom{
+            background-color: rgb(116, 54, 54);
+            border-radius: 30px;
+            cursor: pointer;
+            width: 128px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    }
+    .browse-image-one:hover .button-bottom,.browse-image-two:hover .view-button,.browse-image-three:hover .view-button,.browse-image-four:hover .view-button,.browse-image-five:hover .view-button,.browse-image-six:hover .view-button,.browse-image-seven:hover .view-button,.browse-image-eight:hover .view-button,.browse-image-nine:hover .view-button,.browse-image-ten:hover .view-button{
+        display: flex;
+    }
+    .button-holder .button-bottom{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .browse-page{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .browse-area{
+            height: auto;
+            width: 90%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .individual-outside{
+            width: 100%;
+            margin-bottom: 9%;
+        
+        .browse-individual{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 5%;
+            width: 90%;
+            height: 250px;
+
+    .browse-image-one .button,.browse-image-two .button,.browse-image-three .button,.browse-image-four .button,.browse-image-five .button,.browse-image-six .button,.browse-image-seven .button,.browse-image-eight .button,.browse-image-nine .button,.browse-image-ten .button{
+        display: flex;
+    }
+        .browse-caption{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 150px;
+    }
+    }
+    }
+}
+}
